@@ -42,12 +42,21 @@
       margin-bottom: 32px;
     }
 
+    .product-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
     .product-image {
       border: 2px solid #ccc;
       padding: 12px;
       border-radius: 16px;
       background-color: #f9f9f9;
       filter: none;
+      max-width: calc(90vw - 24px); /* accounts for padding */
+      height: auto;
     }
 
     a.button {
@@ -84,12 +93,12 @@
 
   <img src="instructions.png" alt="Instructions" />
 
-  <img src="get-a-website.png" alt="Website Example" class="product-image" />
+  <div class="product-wrapper">
+    <img src="get-a-website.png" alt="Website Example" class="product-image" />
+  </div>
 
   <a href="https://buy.stripe.com/5kQ14m8qNbcogyG61w93y0M" target="_blank" rel="noopener" class="button">Get A Site</a>
-  <br>
-  <br>
-  <br>
+
   <footer>
     &copy; 2025 Kai Funded. All rights reserved.
   </footer>
